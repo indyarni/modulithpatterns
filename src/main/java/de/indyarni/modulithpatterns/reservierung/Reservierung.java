@@ -2,6 +2,7 @@ package de.indyarni.modulithpatterns.reservierung;
 
 import de.indyarni.modulithpatterns.saal.Sitzreihe;
 import de.indyarni.modulithpatterns.vorfuehrung.Vorfuehrung;
+import lombok.AllArgsConstructor;
 import lombok.Value;
 
 @Value
