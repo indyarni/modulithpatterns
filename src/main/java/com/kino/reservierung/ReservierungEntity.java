@@ -1,4 +1,4 @@
-package de.indyarni.modulithpatterns.reservierung;
+package com.kino.reservierung;
 
 import lombok.Data;
 import lombok.Value;

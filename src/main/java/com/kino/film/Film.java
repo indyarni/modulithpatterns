@@ -1,4 +1,4 @@
-package de.indyarni.modulithpatterns.film;
+package com.kino.film;
 
 import lombok.Value;
 

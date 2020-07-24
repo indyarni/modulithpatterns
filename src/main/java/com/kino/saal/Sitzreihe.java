@@ -1,4 +1,4 @@
-package de.indyarni.modulithpatterns.saal;
+package com.kino.saal;
 
 import lombok.Value;
 

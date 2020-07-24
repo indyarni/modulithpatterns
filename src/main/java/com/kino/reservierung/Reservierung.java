@@ -1,8 +1,7 @@
-package de.indyarni.modulithpatterns.reservierung;
+package com.kino.reservierung;
 
-import de.indyarni.modulithpatterns.saal.Sitzreihe;
-import de.indyarni.modulithpatterns.vorfuehrung.Vorfuehrung;
-import lombok.AllArgsConstructor;
+import com.kino.saal.Sitzreihe;
+import com.kino.programm.Vorfuehrung;
 import lombok.Value;
 
 @Value

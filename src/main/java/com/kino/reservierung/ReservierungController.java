@@ -1,4 +1,4 @@
-package de.indyarni.modulithpatterns.reservierung;
+package com.kino.reservierung;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +10,7 @@ public class ReservierungController {
     private ReservierungService reservierungService;
 
     @PutMapping("/{reservierungId}/abholung")
-    public ResponseEntity<Reservierung> getReservierung(@PathVariable Long reservierungId) {
+    public ResponseEntity<Reservierung> abholen(@PathVariable Long reservierungId) {
         return ResponseEntity.ok(reservierungService.abholen(reservierungId));
     }
 

@@ -1,4 +1,4 @@
-package de.indyarni.modulithpatterns.saal;
+package com.kino.saal;
 
 public enum Kategorie {
     VIP,LOGE,PARKETT

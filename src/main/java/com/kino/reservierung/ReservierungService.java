@@ -1,7 +1,7 @@
-package de.indyarni.modulithpatterns.reservierung;
+package com.kino.reservierung;
 
-import de.indyarni.modulithpatterns.saal.Kategorie;
-import de.indyarni.modulithpatterns.vorfuehrung.Vorfuehrung;
+import com.kino.saal.Kategorie;
+import com.kino.programm.Vorfuehrung;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -16,7 +16,7 @@ public class ReservierungService {
         // return the relevant information
     }
 
-    Reservierung abholen(Long reservierungId) {
+    public Reservierung abholen(Long reservierungId) {
         ReservierungEntity reservierungEntity = repository.findById(reservierungId).get();
         reservierungEntity.setAbgeholt(true);
         return fromEntity(repository.save(reservierungEntity));

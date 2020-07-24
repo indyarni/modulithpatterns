@@ -1,7 +1,7 @@
-package de.indyarni.modulithpatterns.vorfuehrung;
+package com.kino.programm;
 
-import de.indyarni.modulithpatterns.film.Film;
-import de.indyarni.modulithpatterns.saal.Saal;
+import com.kino.saal.Saal;
+import com.kino.film.Film;
 import lombok.Value;
 
 import java.time.LocalDateTime;

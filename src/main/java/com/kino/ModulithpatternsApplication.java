@@ -1,4 +1,4 @@
-package de.indyarni.modulithpatterns;
+package com.kino;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

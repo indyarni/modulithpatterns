@@ -1,6 +1,6 @@
-package de.indyarni.modulithpatterns.filmverleih;
+package com.kino.filmverleih;
 
-import de.indyarni.modulithpatterns.film.Film;
+import com.kino.film.Film;
 import lombok.Value;
 
 import java.time.LocalDateTime;

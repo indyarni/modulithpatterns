@@ -1,12 +1,13 @@
-package de.indyarni.modulithpatterns.reservierung;
+package com.kino.reservierung;
 
-import de.indyarni.modulithpatterns.saal.Kategorie;
-import de.indyarni.modulithpatterns.saal.Sitzreihe;
-import de.indyarni.modulithpatterns.vorfuehrung.Vorfuehrung;
+import com.kino.saal.Kategorie;
+import com.kino.saal.Sitzreihe;
+import com.kino.programm.Vorfuehrung;
 
 import java.util.HashMap;
 import java.util.Map;
 
+// Das ist zusätzlicher Business Code zum Business Service. In manchen Modulen ist die Business Logik so komplex, dass sie über mehrere Klassen verteilt werden muss.
 class SitzplatzFinder {
     Map<Sitzreihe, Integer> findeFreieSitzplaetze(Vorfuehrung vorfuehrung, Kategorie kategorie, Integer anzahl) {
         // Algorithmus zum ermitteln freier Sitzplätze anhand der Eigenschaften
