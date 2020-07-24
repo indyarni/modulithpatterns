@@ -1,6 +1,6 @@
 package com.kino.programm;
 
-import com.kino.saal.Saal;
+import com.kino.xsaal.Saal;
 import com.kino.film.Film;
 import lombok.Value;
 

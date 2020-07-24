@@ -1,4 +1,4 @@
-package com.kino.saal;
+package com.kino.xsaal;
 
 public enum Kategorie {
     VIP,LOGE,PARKETT

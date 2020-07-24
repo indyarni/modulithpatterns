@@ -1,6 +1,6 @@
 package com.kino.reservierung;
 
-import com.kino.saal.Sitzreihe;
+import com.kino.xsaal.Sitzreihe;
 import com.kino.programm.Vorfuehrung;
 import lombok.Value;
 

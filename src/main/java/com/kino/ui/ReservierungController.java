@@ -1,11 +1,13 @@
-package com.kino.reservierung;
+package com.kino.ui;
 
+import com.kino.reservierung.Reservierung;
+import com.kino.reservierung.ReservierungService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/reservierungen")
-public class ReservierungController {
+class ReservierungController {
 
     private ReservierungService reservierungService;
 
