@@ -22,7 +22,7 @@ public class ReservierenService {
         return fromEntity(repository.save(dbReservierung));
     }
 
-    private SitzplatzReservierung fromEntity(DbReservierung entity) {
+    public SitzplatzReservierung fromEntity(DbReservierung entity) {
         // mapping code hier rein
         return null;
     }
