@@ -1,5 +1,8 @@
-package com.kino.reservierung;
+package com.kino.reservierung.business;
 
+import com.kino.reservierung.business.Reservierung;
+import com.kino.reservierung.persistence.ReservierungEntity;
+import com.kino.reservierung.persistence.ReservierungRepository;
 import com.kino.saal.Kategorie;
 import com.kino.programm.Vorfuehrung;
 import org.springframework.stereotype.Service;

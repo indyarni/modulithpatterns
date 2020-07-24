@@ -1,4 +1,6 @@
-package com.kino.reservierung;
+package com.kino.reservierung.persistence;
+
+import com.kino.reservierung.persistence.ReservierungEntity;
 
 public class ReservierungRepository {
 

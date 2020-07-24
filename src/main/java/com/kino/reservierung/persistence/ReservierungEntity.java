@@ -1,4 +1,4 @@
-package com.kino.reservierung;
+package com.kino.reservierung.persistence;
 
 import lombok.Data;
 import lombok.Value;

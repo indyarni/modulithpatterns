@@ -1,4 +1,4 @@
-package com.kino.reservierung;
+package com.kino.reservierung.business;
 
 import com.kino.saal.Sitzreihe;
 import com.kino.programm.Vorfuehrung;
