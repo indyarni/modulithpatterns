@@ -5,7 +5,7 @@ import com.kino.programm.Vorfuehrung;
 import lombok.Value;
 
 @Value
-public class Reservierung {
+public class SitzplatzReservierung {
 
     private Long id;
     private Vorfuehrung vorfuehrung;
