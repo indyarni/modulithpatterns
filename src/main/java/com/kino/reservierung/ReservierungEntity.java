@@ -8,7 +8,7 @@ import javax.persistence.Id;
 
 @Data
 @Entity
-class ReservierungEntity {
+public class ReservierungEntity {
 
     @Id
     private Long id;

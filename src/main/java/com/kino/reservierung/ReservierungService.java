@@ -17,7 +17,7 @@ public class ReservierungService {
     }
 
     public Reservierung abholen(Long reservierungId) {
-        ReservierungEntity reservierungEntity = repository.findById(reservierungId).get();
+        ReservierungEntity reservierungEntity = repository.findById(reservierungId);
         reservierungEntity.setAbgeholt(true);
         return fromEntity(repository.save(reservierungEntity));
     }
