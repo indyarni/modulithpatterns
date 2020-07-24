@@ -1,5 +1,6 @@
-package com.kino.reservierung;
+package com.kino.reservierung.business;
 
+import com.kino.reservierung.server.JdbcReservierungRepository;
 import com.kino.saal.Kategorie;
 import com.kino.programm.Vorfuehrung;
 import org.springframework.stereotype.Service;
@@ -7,9 +8,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class ReservierungService {
 
-    private ReservierungRepository repository;
+    private JdbcReservierungRepository repository;
 
-    void reserviereZufaelligenPlatz(Vorfuehrung vorfuehrung, Kategorie kategorie) {
+    public void reserviereZufaelligenPlatz(Vorfuehrung vorfuehrung, Kategorie kategorie) {
         // get all free sitzplätze of vorführung
         // randomly select one
         // create new reservierung with it

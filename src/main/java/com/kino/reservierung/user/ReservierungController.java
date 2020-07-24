@@ -1,5 +1,7 @@
-package com.kino.reservierung;
+package com.kino.reservierung.user;
 
+import com.kino.reservierung.business.ReservierungService;
+import com.kino.reservierung.business.Reservierung;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
