@@ -9,8 +9,4 @@ class ReservierungRepository {
     ReservierungEntity save(ReservierungEntity reservierung) {
         return new ReservierungEntity();
     }
-
-    void delete(Long id) {
-
-    }
 }

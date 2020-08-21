@@ -14,23 +14,8 @@ class ReservierungController {
 
     @PutMapping("/{reservierungId}/abholung")
     ResponseEntity<HttpStatus> abholen(@PathVariable Long reservierungId) {
-        abholenDirectMethod(reservierungId);
+//        abholenDirectMethod(reservierungId);
         return ResponseEntity.ok().build();
     }
-
-    private void abholenDirectMethod (Long reservierungId) {
-        reservierungService.abholen(reservierungId);
-    }
-
-    private void abholenCrudWithFlag(Long reservierungId) {
-        Reservierung reservierung = reservierungService.read(reservierungId);
-        reservierung.setAbgeholt(true);
-        reservierungService.update(reservierung);
-    }
-
-    private void abholenCrudWithDelete(Long reservierungId) {
-        reservierungService.delete(reservierungId);
-    }
-
 
 }
