@@ -13,7 +13,7 @@ class ReservierungController {
     private ReservierungService reservierungService;
 
     @PutMapping("/{reservierungId}/abholung")
-    public ResponseEntity<HttpStatus> abholen(@PathVariable Long reservierungId) {
+    ResponseEntity<HttpStatus> abholen(@PathVariable Long reservierungId) {
         abholenDirectMethod(reservierungId);
         return ResponseEntity.ok().build();
     }
