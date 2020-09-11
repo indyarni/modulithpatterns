@@ -24,6 +24,11 @@ public class ReservierungService {
         Reservierung reservierung = fromEntity(repository.save(reservierungEntity));
     }
 
+    public String export(Long kundeId) {
+        ReservierungEntity reservierung = repository.findByKundeId(kundeId);
+        return reservierung.getNummer() + reservierung.getVorfuehrung().toString();
+    }
+
     private Reservierung fromEntity(ReservierungEntity entity) {
         // mapping code hier rein
         return null;
