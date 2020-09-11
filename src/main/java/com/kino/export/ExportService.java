@@ -1,22 +1,20 @@
 package com.kino.export;
 
-import com.kino.crm.KundeService;
-import com.kino.reservierung.ReservierungService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class ExportService {
 
     @Autowired
-    ReservierungService reservierungService;
-
-    @Autowired
-    KundeService kundeService;
+    List<ExportPlugin> exportPlugins;
 
     public String export(Long kundeId) {
-        String kundenExport = kundeService.export(kundeId);
-        String reservierungsExport = reservierungService.export(kundeId);
-        return kundenExport + reservierungsExport;
+        return exportPlugins.stream()
+                .map(plugin -> plugin.export(kundeId))
+                .collect(Collectors.joining(","));
     }
 }

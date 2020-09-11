@@ -33,4 +33,8 @@ public class ReservierungService {
         // mapping code hier rein
         return null;
     }
+
+    public Reservierung findByKundeId(Long kundeId) {
+        return new Reservierung();
+    }
 }
