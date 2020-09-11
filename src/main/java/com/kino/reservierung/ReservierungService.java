@@ -1,15 +1,16 @@
 package com.kino.reservierung;
 
-import com.kino.xsaal.Kategorie;
+import com.kino.email.EmailService;
+import com.kino.saal.Kategorie;
 import com.kino.programm.Vorfuehrung;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 
 @Service
 public class ReservierungService {
 
     private ReservierungRepository repository;
+
+    private EmailService emailService;
 
     public void reserviereZufaelligenPlatz(Vorfuehrung vorfuehrung, Kategorie kategorie) {
         // get all free sitzplätze of vorführung
@@ -22,6 +23,7 @@ public class ReservierungService {
         ReservierungEntity reservierungEntity = repository.findById(reservierungId);
         reservierungEntity.setAbgeholt(true);
         Reservierung reservierung = fromEntity(repository.save(reservierungEntity));
+        emailService.sendMail("Reservierung " + reservierung.toString() + "wurde abgeholt.");
     }
 
     public String export(Long kundeId) {

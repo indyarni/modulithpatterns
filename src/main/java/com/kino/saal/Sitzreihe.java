@@ -1,4 +1,4 @@
-package com.kino.xsaal;
+package com.kino.saal;
 
 import lombok.Value;
 

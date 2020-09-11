@@ -1,7 +1,7 @@
 package com.kino.reservierung;
 
-import com.kino.xsaal.Kategorie;
-import com.kino.xsaal.Sitzreihe;
+import com.kino.saal.Kategorie;
+import com.kino.saal.Sitzreihe;
 import com.kino.programm.Vorfuehrung;
 
 import java.util.HashMap;
