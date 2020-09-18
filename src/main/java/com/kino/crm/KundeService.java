@@ -18,6 +18,7 @@ public class KundeService {
 
     public void registrieren() {
         emailService.sendMail("");
+        exportService.export(1L);
     }
 
 
