@@ -56,6 +56,25 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>de.olivergierke.moduliths</groupId>
+            <artifactId>moduliths-core</artifactId>
+            <version>1.0.0.RC3</version>
+        </dependency>
+
+        <!-- Test support -->
+        <dependency>
+            <groupId>de.olivergierke.moduliths</groupId>
+            <artifactId>moduliths-test</artifactId>
+            <version>1.0.0.RC3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
